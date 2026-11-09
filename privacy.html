@@ -25,7 +25,7 @@
 <main>
   <a class="mark" href="./" aria-label="Move and Measure home">M<span>M</span></a>
   <h1>Privacy policy</h1>
-  <p class="meta">Move &amp; Measure for iPhone · Last updated 1 November 2026</p>
+  <p class="meta">Move &amp; Measure for iPhone · Last updated 9 November 2026</p>
 
   <div class="summary">
     <strong>In short</strong>
@@ -44,8 +44,8 @@
   <p>Everything you enter in the app stays on your iPhone, in the app's own private storage: your workouts, sets, reps, weights and rest times, how a workout felt (such as tired or strong), complexes, plans and routines, kettlebells, personal records, and your settings (such as your name, kg or lb, and weekly goal). It is never sent to us.</p>
   <ul>
     <li><strong>Your iCloud backup:</strong> if you use iCloud Backup, Apple includes the app's data in your iPhone's backup, under your Apple account.</li>
-    <li><strong>Backup files:</strong> if you export a backup, the file goes wherever you choose to save or send it (for example Files, iCloud Drive or AirDrop).</li>
-    <li><strong>Widgets and the Lock Screen:</strong> the "This week" widget and the workout shown on the Lock Screen and in the Dynamic Island read a small summary (your weekly goal, volume and current workout) from shared storage on your iPhone.</li>
+    <li><strong>Backup files:</strong> if you export a backup, the file goes wherever you choose to save or send it (for example Files, iCloud Drive or AirDrop). It contains your whole training history as plain text, so keep it somewhere private. The app doesn't keep its own copy once the file has been shared.</li>
+    <li><strong>Widgets and the Lock Screen:</strong> the "This week" widget and the workout shown on the Lock Screen and in the Dynamic Island read a small summary (your weekly goal, volume and current workout) from shared storage on your iPhone. Anyone who can see your Lock Screen can see it; you can turn the workout display off in <strong>Settings → Training → Show on Lock Screen</strong>.</li>
     <li><strong>Deleting:</strong> deleting the app deletes all of this from your iPhone.</li>
   </ul>
 
@@ -53,16 +53,21 @@
   <p>To learn which features are used and improve the app, you can choose to share anonymous usage data. It is <strong>off until you turn it on</strong>, either on the last welcome screen or in <strong>Settings → Privacy → Share anonymous usage data</strong>, and you can turn it off there at any time. While it's off, nothing is sent.</p>
   <p>When it's on, the app uses <strong>Google Analytics for Firebase</strong> to record:</p>
   <ul>
-    <li>which screens and features are used (for example starting or finishing a workout, the type of workout, how long it lasted, opening the Volume tab);</li>
+    <li>which screens and features are used (for example starting or finishing a workout, the type of workout, opening the Volume tab);</li>
+    <li>numbers about your workouts (for example sets, reps, weights, total weight lifted, workout and rest times, new personal bests, and how a workout felt if you pick one);</li>
     <li>your settings choices (for example kg or lb, light or dark appearance) and rounded counts (for example how many workouts you've logged);</li>
     <li>a random identifier for this app on this iPhone, created by Firebase, so visits can be counted; and</li>
     <li>general device information Firebase collects automatically, such as the iPhone model, iOS version, app version, language and country.</li>
   </ul>
-  <p>It never includes your name, anything you type (such as workout names or Coach questions), your AI Coach key, or your health data. The app is built <strong>without the advertising identifier</strong> (IDFA), doesn't track you across other apps or websites, and the data isn't used for advertising. Google processes this data on our behalf; see <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Usage data is kept for a limited time in Google Analytics and then deleted.</p>
+  <p>It never includes your name, anything you type (such as workout names or Coach questions), your AI Coach key, or anything from Apple Health. The app is built <strong>without the advertising identifier</strong> (IDFA), doesn't track you across other apps or websites, and the data isn't used for advertising. Google processes this data on our behalf; see <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Usage data is kept for a limited time in Google Analytics and then deleted.</p>
+  <p>The app also checks for app updates with Expo, the service it's built with. Like any connection, this shares your iPhone's IP address with that service; nothing about you or your training is sent.</p>
 
   <h2>AI Coach (optional, uses your own key)</h2>
   <p>The Coach only works if you choose an AI in <strong>Settings → AI Coach</strong> (Claude by Anthropic, ChatGPT by OpenAI, or Gemini by Google) and add your own API key for it. Your keys are stored in your iPhone's Keychain and are never sent to us or included in backups.</p>
-  <p>When you ask the Coach a question, your question and a summary of your recent training (such as exercises, sets, reps, weights, rest times and dates, how your recent workouts felt, and any personal bests) are sent <strong>directly from your iPhone to the AI provider you chose</strong>, under your own account with them, to produce the answer. Only that one provider receives it, and we don't receive or store any of it. Each provider's handling of this data is covered by its own terms and privacy policy: <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://policies.google.com/privacy">Google</a>. Without a key, the Coach only shows sample replies and sends nothing.</p>
+  <p>When you ask the Coach a question, your question and a summary of your recent training (such as exercises, sets, reps, weights, rest times and dates, how your recent workouts felt, and any personal bests) are sent <strong>directly from your iPhone to the AI provider you chose</strong>, under your own account with them, to produce the answer. Before the first question to each provider, the app asks your permission; removing that provider's key withdraws it. Only that one provider receives it, and we don't receive or store any of it. Each provider keeps and uses this data under its own terms and privacy policy, including how long it's stored: <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, <a href="https://openai.com/policies/privacy-policy/">OpenAI</a>, <a href="https://policies.google.com/privacy">Google</a>. Without a key, the Coach only shows sample replies and sends nothing.</p>
+
+  <h2>Legal basis and where data goes</h2>
+  <p>We rely on your <strong>consent</strong>: for usage data (the switch, which you can turn off at any time) and for the AI Coach (the permission asked before sharing, which you withdraw by removing your key). Google, Anthropic and OpenAI may process data in the United States and other countries, under the safeguards described in their own policies.</p>
 
   <h2>Apple Health (optional)</h2>
   <p>If you turn on <strong>Save workouts to Apple Health</strong>, finished workouts (their type, start and end time) are saved to the Health app on your iPhone. Move &amp; Measure only writes workouts; it never reads your health data. You can change this in the Health app at any time.</p>
